@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Login from "./components/loginForm/login_form"
 import QrCodeReader from "./components/reader/reader-custom";
 import QrCodeGenerator from "./components/generator/generator";
 import QRCodeReaderButton from "./components/reader/QRCodeReaderButton";
@@ -23,6 +24,9 @@ function App() {
 
   return (
     <div>
+      <Login/>
+    {/*
+
       <Navbar />
       <br />
       <br />
@@ -32,7 +36,9 @@ function App() {
       <br />
       <br />
       {showReader && <QrCodeReader/>}
-      {showGenerator && <QrCodeGenerator value='google.com' size={350}/>}
+      {showGenerator && <QrCodeGenerator value='google.com' size={350}/>} 
+
+    */}
 
     </div>
   );
