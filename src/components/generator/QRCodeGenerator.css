@@ -1,0 +1,16 @@
+button { 
+	background-color: #FFF; /* Fondo blanco para hacer contraste con #C66A6F */ 
+	color: #C66A6F; /* Color del texto que combina con el fondo */ 
+	border: 2px solid #C66A6F; /* Borde que coincide con el fondo */
+	border-radius: 8px; /* Bordes redondeados para un look moderno */ 
+	padding: 10px 20px; /* Espaciado interno para un mejor tamaño */ 
+	font-size: 16px; /* Tamaño de letra adecuado */ 
+	font-weight: bold; /* Texto en negrita */ 
+	cursor: pointer; /* Cambia el cursor cuando el botón es interactivo */ 
+	transition: background-color 0.3s ease, color 0.3s ease; /* Animación suave */ 
+} 
+
+button:hover { 
+	background-color: #C66A6F; /* Fondo cambia al pasar el mouse */ 
+	color: #FFF; /* Texto cambia a blanco en hover */ 
+}

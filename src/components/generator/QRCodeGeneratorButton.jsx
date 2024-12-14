@@ -1,9 +1,20 @@
 // QRCodeGeneratorButton.js
-import React from "react";
+import React, { useState } from "react";
+import QrCodeGenerator from "./generator";
+import './QRCodeGenerator.css';
 
-function QRCodeGeneratorButton({ onClick }) {
+function QRCodeGeneratorButton() {
+  const [showQRCode, setShowQRCode] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowQRCode(true);
+  };
   return (
-    <button onClick={onClick}>Create QR</button>
+    <div>
+      <button onClick={handleButtonClick}>Create QR</button>
+      <br></br>
+      {showQRCode && <QrCodeGenerator value="info@pciviltachira.gob.ve" size={350} />}
+    </div>
   );
 }
 
